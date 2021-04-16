@@ -20,7 +20,7 @@ SUBJECTSLIST=$OUTPUTDIR/CTSeg_subjectlist.txt
 # Transform intensities to cormac units.
 
 echo "Transforming images into cormac units...."
-python $CTSEGPATH/CTSeg/imgTransformChris.py $SUBJECTSLIST $OUTPUTDIR $DATADIR .nii
+python $CTSEGPATH/CTSeg/intensity_tranform.py $SUBJECTSLIST $OUTPUTDIR $DATADIR .nii
 
 
 # Registering into MNI Space.
